@@ -1,0 +1,221 @@
+body{
+    background-image: url("./images/background.jpg"); 
+    height: 800px;
+}
+
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: sans-serif;
+    /* margin: 0;
+    padding-bottom: 50px; */
+}
+
+
+.outer-box{
+    width: 50%;
+    margin: 5% auto;
+}
+
+.box{
+    background-color:darkslategray;
+    color: white;
+    height: 100%;
+    padding: 30px 5px 50px 5px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.text{
+    text-align: center;
+}
+
+.text-addTodo{
+
+    text-align: center;
+    margin-top: 10px;
+}
+
+input{
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 16px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn-addTodo{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.btn-addTodo:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.btn-addTodo:focus{
+    outline: none;
+}
+
+.todo-list{
+    max-height: 500px;
+    overflow-y:auto;
+}
+
+.todo-list::-webkit-scrollbar{
+    width: 10px;
+}
+.todo-list::-webkit-scrollbar-track{
+    background-color: lightgray;
+}
+
+.todo-list::-webkit-scrollbar-thumb{
+    background-color: darkslategray;
+    border-radius: 5px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(47, 79, 79, 0.89);
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+li{
+    background-color: rgba(220, 220, 220, 0.651);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 35px 15px 30px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;    
+}
+
+.icon-Todo{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+.gray{
+    color: dimgray;
+}
+
+.green{
+    color: green;
+}
+
+.fa-check-circle:hover{
+    color: green;
+    transition: 0.3s;
+}
+
+.fa-trash-alt{
+    color: dimgray;
+}
+
+.fa-trash-alt:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+.footer{
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0px 0px 15px 15px;
+    border-top: 1px solid white;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 720px){
+
+body{
+    background-image: url("./images/background-mobile.jpg");
+    height: 700px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em
+}
+
+p{
+    font-size: 0.75em;
+}
+
+.outer-box{
+    margin: 20px auto;
+    width: 90%;
+    padding-bottom: 20px;
+}
+
+.btn-addTodo{
+    margin-top: 20px;
+    margin-left: 0;
+    font-size: 1em;
+}
+
+li{
+    padding: 15px 40px 15px 20px;
+}
+
+.icon-Todo{
+    width: 15px;
+}
+
+.fa-check-circle:before {
+    content: "\f058";
+    margin-right: 7px;
+}
+
+}
